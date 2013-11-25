@@ -1868,10 +1868,12 @@ void ov4688_yushanII_set_parm(struct msm_sensor_ctrl_t *sensor, int res,Ilp0100_
 		sensor->msm_sensor_reg->output_settings[MSM_SENSOR_RES_FULL].line_length_pclk * 4;
 }
 
+#ifdef RAWCHIPII
 void ov4688_yushanII_set_IQ(struct msm_sensor_ctrl_t *sensor,int* channel_offset,int* tone_map,int* disable_defcor,struct yushanii_cls* cls)
 {
     *channel_offset = 70;
 }
+#endif
 
 void ov4688_yushanII_active_hold(void)
 {
