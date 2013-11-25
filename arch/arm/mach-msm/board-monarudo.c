@@ -853,6 +853,8 @@ static int pm8921_is_wireless_charger(void)
 		return 0;
 }
 
+static int critical_alarm_voltage_mv[] = {3000, 3100, 3200, 3400};
+
 static struct htc_battery_platform_data htc_battery_pdev_data = {
 	.guage_driver = 0,
 	.chg_limit_active_mask = HTC_BATT_CHG_LIMIT_BIT_TALK |
