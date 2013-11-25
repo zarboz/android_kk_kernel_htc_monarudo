@@ -733,8 +733,8 @@ static int msm_mctl_open(struct msm_cam_media_controller *p_mctl,
 #endif
 		}
 
-		if (p_mctl->sdata->htc_image == HTC_CAMERA_IMAGE_YUSHANII_BOARD) {
 #ifdef CONFIG_RAWCHIPII
+		if (p_mctl->sdata->htc_image == HTC_CAMERA_IMAGE_YUSHANII_BOARD) {
 			rc = YushanII_open_init();
 			if (rc < 0) {
 				goto sensor_sdev_failed;
