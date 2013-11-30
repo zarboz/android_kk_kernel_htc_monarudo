@@ -1201,6 +1201,7 @@ static struct pm8xxx_gpio_init switch_to_mhl_pmic_gpio_table[] = {
                          PM_GPIO_FUNC_NORMAL, 0, 0),
 };
 
+#if 0
 static struct pm8xxx_gpio_init switch_to_usb_headset_pmic_gpio_table[] = {
         PM8XXX_GPIO_INIT(AUDIOz_MHL_SW, PM_GPIO_DIR_OUT,
                          PM_GPIO_OUT_BUF_CMOS, 0, PM_GPIO_PULL_NO,
@@ -1211,6 +1212,7 @@ static struct pm8xxx_gpio_init switch_to_usb_headset_pmic_gpio_table[] = {
                          PM_GPIO_VIN_S4, PM_GPIO_STRENGTH_LOW,
                          PM_GPIO_FUNC_NORMAL, 0, 0),
 };
+#endif
 
 static void config_gpio_table(uint32_t *table, int len)
 {
