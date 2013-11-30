@@ -1605,7 +1605,9 @@ static struct android_usb_platform_data android_usb_pdata = {
 	.usb_diag_interface = "diag,diag_mdm",
 	.fserial_init_string = "HSIC:modem,tty,tty:autobot,tty:serial,tty:autobot,tty:acm",
 	.serial_number = "000000000000",
+#if 0
         .match = monarudo_usb_product_id_match,
+#endif
 	.nluns		= 1,
 };
 
